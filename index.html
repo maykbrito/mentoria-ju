@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300&family=Lora:wght@700&family=Oswald:wght@200&family=Playfair+Display:wght@400;900&family=Rowdies&family=Sarala&family=Source+Serif+4:wght@300&family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sorte Aqui</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo"><h1>Sorte Aqui</h1></div>
+    </header>
+    <div id="line"></div>
+    <main>
+      <div id="description">
+        <h2>Gerador de Números aleatórios</h2>
+        <br />
+
+        <p>
+          Para gerar os números informe o valor máximo e a quantidade de números
+          de acordo com o tipo de jogo
+        </p>
+        <p>Clique no botão Gerar</p>
+        <br />
+      </div>
+      <div id="prize-draw">
+        <div id="choice">
+          <label> Valor maximo:</label><br /><br />
+
+          <input type="number" id="valor-maximo" /><br /><br />
+
+          <label> Quantidade de números:</label><br /><br />
+          <input type="number" id="quantidade-de-numeros" /><br /><br />
+
+          <button id="btnAdd" onclick="sortear()">Gerar</button>
+          <button id="btnAdd" onclick="window.location.reload()">Limpar</button>
+          <button id="btnAdd" onclick="salvar()">Copiar</button>
+        </div>
+
+        <div id="result"><ul id="lista"></ul></div>
+      </div>
+    </main>
+    <footer>Juliana santo</footer>
+    <script src="sort.js"></script>
+  </body>
+</html>
